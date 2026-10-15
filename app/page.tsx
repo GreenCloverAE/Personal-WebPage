@@ -1,11 +1,8 @@
-import Link from "next/link";
+
 export default function Home() {
   return (
-    <div className="">
-      <nav>
-        <Link href="/about"> About Me</Link>
-      </nav>
-      <main className="px-8 py-8">
+    <div className="relative min-h-[calc(100vh-60px)] flex flex-col overflow-hidden bg-sky-300">
+      <main className="px-8 py-8 flex-1">
         <h1 className="text-center text-4xl mb-4 font-bold">
           Hello, I'm Anthony
         </h1>
@@ -21,6 +18,10 @@ export default function Home() {
         </section>
 
       </main>
-    </div>
+      <div className="absolute bottom-32 left-20 w-8 h-32 bg-amber-800"></div>
+      <div className="absolute bottom-64 left-12 w-24 h-24 bg-green-700"></div>
+      <div className="bg-green-600 h-8"></div>
+      <div className="bg-amber-900 h-24"></div>
+      </div>
   );
 }
